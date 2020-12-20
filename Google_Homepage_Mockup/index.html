@@ -13,47 +13,54 @@
   <body>
     <div class="container">
       <header>
-        <nav>
-          <ul class="dflex list-style-none">
-            <div class="dflex">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Store</a></li>
-            </div>
-            <div class="dflex link-group margin-left-auto">
-              <li><a href="#">Gmail</a></li>
-              <li><a href="#">Images</a></li>
-              <li>
-                <a href="#"><i class="material-icons">apps</i></a>
-              </li>
-              <li><button class="button sign-in-button">Sign In</button></li>
-            </div>
+        <nav class="header__nav dflex justify-content-space-between">
+          <ul class="header__link-group dflex list-style-none">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+          </ul>
+          <ul class="header__link-group dflex list-style-none">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li>
+              <a href="#"><i class="material-icons">apps</i></a>
+            </li>
+            <li><button class="button sign-in-button">Sign In</button></li>
           </ul>
         </nav>
       </header>
-      <main>
+      <main class="dflex flex-direction-column align-items-center">
         <img
           class="main__hero"
           src="https://web.archive.org/web/20201219222055im_/https:/www.google.com/logos/doodles/2020/december-holidays-days-2-30-6753651837108830.3-law.gif"
         />
         <form>
           <input class="search-input" type="text" />
-          <button class="button">Google Search</button>
-          <button class="button">I'm Feeling Lucky</button>
+          <div class="dflex">
+            <button class="button">Google Search</button>
+            <button class="button">I'm Feeling Lucky</button>
+          </div>
         </form>
       </main>
-      <footer>
-        <ul>
-          <li><a href="#">Advertising</a></li>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">How Search Works</a></li>
-          <li>
-            <a href="#"
-              ><i class="material-icons">eco</i>Carbon neutral since 2007</a
-            >
-          </li>
+      <footer class="footer dflex">
+        <div class="dflex justify-content-center order">
+          <a href="#"
+            ><i class="material-icons margin-left-auto margin-right-auto">eco</i
+            >Carbon neutral since 2007</a
+          >
+        </div>
+        <ul
+          class="footer__link-group dflex justify-content-center list-style-none margin-left-auto"
+        >
           <li><a href="#">Privacy</a></li>
           <li><a href="#">Terms</a></li>
           <li><a href="#">Settings</a></li>
+        </ul>
+        <ul
+          class="footer__link-group dflex list-style-none justify-content-center"
+        >
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">How Search Works</a></li>
         </ul>
       </footer>
     </div>
