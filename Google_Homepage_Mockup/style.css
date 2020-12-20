@@ -11,6 +11,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  min-width: 500px;
 }
 
 ul {
@@ -23,6 +24,13 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/************************
+Container
+************************/
+.container {
+  min-width: 500px;
 }
 
 /************************
@@ -50,6 +58,8 @@ Footer
   left: 0;
   right: 0;
   background-color: lightgrey;
+  padding-left: var(--page-side-padding);
+  padding-right: var(--page-side-padding);
 }
 
 .footer__link-group li + li {
@@ -69,6 +79,10 @@ Flexbox
 
 .flex-direction-column {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .justify-content-center {
@@ -93,4 +107,18 @@ Utilities
 
 .margin-left-auto {
   margin-left: auto;
+}
+
+@media only screen and (min-width: 629px) {
+  .lg-flex-order-1 {
+    order: 1;
+  }
+
+  .lg-flex-order-2 {
+    order: 2;
+  }
+
+  .lg-flex-order-3 {
+    order: 3;
+  }
 }
