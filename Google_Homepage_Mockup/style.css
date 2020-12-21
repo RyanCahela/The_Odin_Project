@@ -1,4 +1,10 @@
 :root {
+  /* colors */
+  --black: #212121;
+  --signin-btn-background: rgb(67, 135, 253);
+  --footer-background: lightgrey;
+
+  /* sizes */
   --link-margin: 10px;
   --page-side-padding: 25px;
 }
@@ -12,6 +18,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 500px;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 ul {
@@ -31,11 +38,25 @@ Container
 ************************/
 .container {
   min-width: 500px;
+  height: 100vh;
 }
 
 /************************
 Header
 *************************/
+.apps-icon {
+  color: grey;
+}
+.sign-in-button {
+  background: var(--signin-btn-background);
+  padding: 7px 12px;
+  border: 0;
+  color: white;
+  font-weight: bold;
+}
+.header__link-group a {
+  color: var(--black);
+}
 .header__link-group li + li {
   margin-left: var(--link-margin);
 }
@@ -43,21 +64,34 @@ Header
 .header__nav {
   padding-left: var(--page-side-padding);
   padding-right: var(--page-side-padding);
+  font-size: 13px;
 }
 
 /*************************
 Main
 *************************/
+.search-input {
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  margin: 20px 0;
+  width: 480px;
+  padding: 15px;
+  outline: none;
+}
+
+.search-form .button {
+  border: none;
+  background-color: whitesmoke;
+  padding: 10px 15px;
+  font-weight: 100;
+}
 
 /************************
 Footer
 ************************/
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: lightgrey;
+  background-color: var(--footer-background);
+  margin-block-start: auto;
   padding-left: var(--page-side-padding);
   padding-right: var(--page-side-padding);
 }

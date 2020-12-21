@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -11,18 +16,22 @@
     <title>Google Homepage Mockup</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container dflex flex-direction-column">
       <header>
         <nav class="header__nav dflex justify-content-space-between">
-          <ul class="header__link-group dflex list-style-none">
+          <ul
+            class="header__link-group dflex list-style-none align-items-center"
+          >
             <li><a href="#">About</a></li>
             <li><a href="#">Store</a></li>
           </ul>
-          <ul class="header__link-group dflex list-style-none">
+          <ul
+            class="header__link-group dflex list-style-none align-items-center"
+          >
             <li><a href="#">Gmail</a></li>
             <li><a href="#">Images</a></li>
             <li>
-              <a href="#"><i class="material-icons">apps</i></a>
+              <a href="#"><i class="material-icons apps-icon">apps</i></a>
             </li>
             <li><button class="button sign-in-button">Sign In</button></li>
           </ul>
@@ -33,9 +42,9 @@
           class="main__hero"
           src="https://web.archive.org/web/20201219222055im_/https:/www.google.com/logos/doodles/2020/december-holidays-days-2-30-6753651837108830.3-law.gif"
         />
-        <form>
+        <form class="search-form">
           <input class="search-input" type="text" />
-          <div class="dflex">
+          <div class="dflex justify-content-center">
             <button class="button">Google Search</button>
             <button class="button">I'm Feeling Lucky</button>
           </div>
