@@ -2,11 +2,13 @@
   /* colors */
   --black: #212121;
   --signin-btn-background: rgb(67, 135, 253);
-  --footer-background: lightgrey;
+  --footer-background: whitesmoke;
 
   /* sizes */
-  --link-margin: 10px;
+  --link-margin: 27px;
   --page-side-padding: 25px;
+  --header-font-size: 13px;
+  --footer-font-size: 14px;
 }
 
 * {
@@ -64,7 +66,7 @@ Header
 .header__nav {
   padding-left: var(--page-side-padding);
   padding-right: var(--page-side-padding);
-  font-size: 13px;
+  font-size: var(--header-font-size);
 }
 
 /*************************
@@ -86,14 +88,23 @@ Main
   font-weight: 100;
 }
 
+.search-form .button + .button {
+  margin-inline-start: 10px;
+}
+
 /************************
 Footer
 ************************/
 .footer {
   background-color: var(--footer-background);
+  font-size: var(--footer-font-size);
   margin-block-start: auto;
   padding-left: var(--page-side-padding);
   padding-right: var(--page-side-padding);
+}
+
+.footer a {
+  color: grey;
 }
 
 .footer__link-group li + li {
